@@ -32,4 +32,4 @@ Acurator
 
 @Qualifier
 
-@Resource 默认按名称注入
+@Resource 默认按名称注入 JDK提供的注解 其余为spring提供
