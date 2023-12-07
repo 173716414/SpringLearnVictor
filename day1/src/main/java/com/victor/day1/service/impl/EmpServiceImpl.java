@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /*
@@ -20,7 +21,7 @@ import java.util.List;
  */
 @Service
 public class EmpServiceImpl implements EmpService {
-    @Autowired
+    @Resource
     private EmpDao empDao;
     @Override
     public List<Emp> listEmp() {

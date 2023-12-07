@@ -33,3 +33,8 @@ Acurator
 @Qualifier
 
 @Resource 默认按名称注入 JDK提供的注解 其余为spring提供
+
+<img src="img/Autowired.jpg" alt="Autowired" style="zoom:50%;" />
+
+<img src="img/Autowired和resource.jpg" alt="Autowired和resource" style="zoom:50%;" />
+
