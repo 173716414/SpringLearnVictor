@@ -38,3 +38,8 @@ Acurator
 
 <img src="img/Autowired和resource.jpg" alt="Autowired和resource" style="zoom:50%;" />
 
+lombok
+
+@Data
+
+![Lombok](img/Lombok.jpg)

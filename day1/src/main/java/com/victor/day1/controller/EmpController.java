@@ -21,7 +21,7 @@ import java.util.List;
  */
 @RestController
 public class EmpController {
-    @Resource
+    @Resource(name = "empServiceImpl")
     private EmpService empService;
 
     @RequestMapping("/listEmp")
