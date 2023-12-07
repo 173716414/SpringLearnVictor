@@ -4,6 +4,7 @@ import com.victor.day1.pojo.Emp;
 import com.victor.day1.pojo.Result;
 import com.victor.day1.service.EmpService;
 import com.victor.day1.service.impl.EmpServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +20,8 @@ import java.util.List;
  */
 @RestController
 public class EmpController {
-    private EmpService empService = new EmpServiceImpl();
+    @Autowired
+    private EmpService empService;
 
     @RequestMapping("/listEmp")
     public Result list() {

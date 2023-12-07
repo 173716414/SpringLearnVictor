@@ -3,6 +3,8 @@ package com.victor.day1.dao.impl;
 import com.victor.day1.dao.EmpDao;
 import com.victor.day1.pojo.Emp;
 import com.victor.day1.utils.XmlParserUtils;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -14,6 +16,7 @@ import java.util.List;
  *Date：2023/12/4  19:44
  *Filename：EmpDaoA
  */
+@Repository
 public class EmpDaoA implements EmpDao {
     @Override
     public List<Emp> listEmp() {

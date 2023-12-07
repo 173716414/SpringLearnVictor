@@ -4,6 +4,9 @@ import com.victor.day1.dao.EmpDao;
 import com.victor.day1.dao.impl.EmpDaoA;
 import com.victor.day1.pojo.Emp;
 import com.victor.day1.service.EmpService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -15,8 +18,10 @@ import java.util.List;
  *Date：2023/12/4  19:04
  *Filename：EmpService
  */
+@Service
 public class EmpServiceImpl implements EmpService {
-    private EmpDao empDao = new EmpDaoA();
+    @Autowired
+    private EmpDao empDao;
     @Override
     public List<Emp> listEmp() {
         List<Emp> empList = empDao.listEmp();
