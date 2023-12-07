@@ -1,8 +1,6 @@
 package com.victor.day1.pojo;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * 统一响应结果封装类
