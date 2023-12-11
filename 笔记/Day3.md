@@ -44,3 +44,10 @@ public interface UserMapper {
 
 实体类中推荐使用包装类型
 
+ ![mybatis](img/mybatis.png)
+
+### 数据库连接池 容器
+
+druid(alibaba开发)   hikari(springboot 默认)
+
+![数据库连接池](img/数据库连接池.png)
