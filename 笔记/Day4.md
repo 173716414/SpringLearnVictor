@@ -54,3 +54,4 @@ XML映射文件三点规范
 
 <img src="img/foreach.png" alt="foreach" style="zoom:80%;" />
 
+![foreach2](img/foreach2.png)
