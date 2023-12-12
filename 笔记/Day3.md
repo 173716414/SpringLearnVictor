@@ -51,3 +51,17 @@ public interface UserMapper {
 druid(alibaba开发)   hikari(springboot 默认)
 
 ![数据库连接池](img/数据库连接池.png)
+
+Mybatis
+
+#{}
+
+```java
+@Mapper
+public interface EmpMapper {
+	@Delete("delete from emp where id  = #{id}")
+	public void delete(Integer   id);
+}
+```
+
+@delete返回值为受影响的记录数
