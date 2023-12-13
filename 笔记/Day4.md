@@ -55,3 +55,31 @@ XML映射文件三点规范
 <img src="img/foreach.png" alt="foreach" style="zoom:80%;" />
 
 ![foreach2](img/foreach2.png)
+
+```xml
+<sql> <include>
+```
+
+![xml](img/xml.png)
+
+
+
+参数1：起始索引
+
+参数2：查询返回记录数，每页展示记录数 
+
+```sql
+select * from emp limit 0, 5;
+```
+
+![分页](img/分页.png)
+
+![分页2](img/分页2.png)
+
+
+
+### PageHelper
+
+![pageHelper](img/pageHelper.png)
+
+![pageHelper2](img/pageHelper2.png)
