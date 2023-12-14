@@ -60,3 +60,31 @@ Claims claims = Jwts.parser()
 ```
 
 ![Jwt生成](img/Jwt生成.png)![Jwt解析](img/Jwt解析.png)
+
+
+
+### 过滤器Filter
+
+![filter1](img/filter1.png)
+
+```java
+chain.doFilter(request, response)
+```
+
+执行放行前逻辑
+
+资源访问完成后还会回到Filter中
+
+执行放行后逻辑
+
+Filter拦截路径
+
+```java
+@WebFilter(urlPatterns = "/")
+```
+
+过滤器链
+
+建立多个Filter类
+
+优先级按照过滤器类名自然排序
