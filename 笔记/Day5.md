@@ -36,3 +36,14 @@ hobby:
 @ConfigurationProperties(prefix = "aliyun.oss")
 ```
 
+
+
+### Cookie
+
+三个自动 http协议中自带支持
+
+header中包含cookie
+
+请求头和响应头
+
+![cookie](img/cookie.png)
