@@ -88,3 +88,30 @@ Filter拦截路径
 建立多个Filter类
 
 优先级按照过滤器类名自然排序
+
+
+
+### Interceptor
+
+由Sping框架提供
+
+动态拦截控制器方法的执行
+
+1. 定义拦截器  实现HandlerInceptor接口
+
+   1. preHandle
+   2. postHandle
+   3. afterCompletion
+
+2. 注册配置拦截器
+
+   ```java
+   @Configuration
+   public class WebConfig implements WebMvcConfigurer {
+       public void addInterceptors(InterceptorRegistry registry) {
+           registry.addInterceptor(自定义拦截器).addPathPatterns("/**");
+       }
+   }
+   ```
+
+   
