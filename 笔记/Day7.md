@@ -24,3 +24,12 @@
     @ExceptionHandler(Exception.class)
 ```
 
+
+
+### Redis
+
+### https://xiaolincoding.com/redis/base/redis_interview.html
+
+https://www.bilibili.com/video/BV1cr4y1671t
+
+NoSQL
