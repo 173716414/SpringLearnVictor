@@ -109,7 +109,7 @@ Filter拦截路径
    @Configuration
    public class WebConfig implements WebMvcConfigurer {
        public void addInterceptors(InterceptorRegistry registry) {
-           registry.addInterceptor(自定义拦截器).addPathPatterns("/**");
+           registry.addInterceptor(自定义拦截器).addPathPatterns("/**").excludePathPatterns("/login");
        }
    }
    ```
