@@ -33,3 +33,14 @@
 https://www.bilibili.com/video/BV1cr4y1671t
 
 NoSQL
+
+1. 非结构化
+2. 无关联的
+3. 非SQL
+4. BASE非ACID
+
+![sql和nosql](img/sql和nosql.png)
+
+![sql和nosql2](img/sql和nosql2.png)
+
+ 
