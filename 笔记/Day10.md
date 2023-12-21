@@ -20,3 +20,8 @@ String类型
 
 ![Redis层级结构](img/Redis层级结构.png)
 
+![RedisHash](img/RedisHash.png)
+
+![RedisHash2](img/RedisHash2.png)
+
+![RedisHash命令](img/RedisHash命令.png)
