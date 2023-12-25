@@ -49,7 +49,7 @@ Block阻塞式获取
 
 3. 查询速度快
 
-   ```
+   ```java
    ZADD KEY SCORE MEMBER
    ZREM KEY MEMBER
    ZSCORE KEY MEMBER
@@ -63,4 +63,14 @@ Block阻塞式获取
    降序在Z后面加上REV 例如ZREVRANK
    ```
 
-   
+
+
+Redis Java客户端
+
+1. Jedis线程不安全，多线程需要线程池，学习成本低
+
+2. lettuce基于netty，支持同步、异步、响应式编程，线程安全，支持哨兵模式、集群模式和管道模式，Spring默认
+
+3. Redisson分布式javba数据结构集合
+
+   ![RedisJava客户端](img/RedisJava客户端.png)

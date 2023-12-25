@@ -21,6 +21,7 @@
     </properties>
     <modules>
         <module>day1</module>
+        <module>jedis-demo2</module>
     </modules>
 
     <dependencies>
