@@ -74,3 +74,7 @@ Redis Java客户端
 3. Redisson分布式javba数据结构集合
 
    ![RedisJava客户端](img/RedisJava客户端.png)
+
+### RedisTemplate
+
+![RedisTemplate](img/RedisTemplate.png)
