@@ -22,6 +22,7 @@
     <modules>
         <module>day1</module>
         <module>jedis-demo2</module>
+        <module>redis-demo</module>
     </modules>
 
     <dependencies>
