@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
+import java.util.Map;
+
 @SpringBootTest
 class RedisStringDemoApplicationTests {
 
@@ -31,5 +33,13 @@ class RedisStringDemoApplicationTests {
         String val = stringRedisTemplate.opsForValue().get("user:222");
         User user1 = MAPPER.readValue(val, User.class);
         System.out.println(user1);
+    }
+
+    @Test
+    void testHash() {
+        stringRedisTemplate.opsForHash().put("user:333", "name", "Lucy");
+        stringRedisTemplate.opsForHash().put("user:333", "age", "18");
+        Map<Object, Object> entries = stringRedisTemplate.opsForHash().entries("user:333");
+        System.out.println(entries);
     }
 }
